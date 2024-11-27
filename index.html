@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Do list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/to-do-list.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+
+    <header class="position-relative w-100">
+        <div class="container">
+            <div class="d-flex pt-3 pb-5">
+                <img src="images/sticky-note.png" class="align-items-center" alt="">
+                <h1 class="text-capitalize text-white">to-do list</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class=" mx-auto">
+                <form action="" class="d-flex align-items-center justify-content-center ">
+                    <div>
+                        <input type="text" id="task" class="form-control" placeholder="Enter Your Task Here"
+                            name="task">
+                        <label for="task"></label>
+                    </div>
+                    <div class="ms-3 align-self-start">
+                        <button class="btn btn-primary" id="add">Add</button>
+                        <button class="btn btn-warning d-none text-white" id="update">Update</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+
+        <section class="w-50 text-center m-auto py-5 px-3 shadow main">
+            <h2 class="text-white py-3">Task List</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Task No</th>
+                        <th scope="col">Task</th>
+                        <th scope="col">Update</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="items">
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

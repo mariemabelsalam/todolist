@@ -1,0 +1,20 @@
+body {
+    background: linear-gradient(to left, #8f94fb, #4e54c8);
+}
+header img {
+    width: 50px;
+}
+
+.form-control {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.form-control::placeholder {
+    color: white;
+}
+
+.main{
+    background-color: rgba(67 , 73 , 162 , .3);
+}
+i {
+    cursor: pointer;
+}
