@@ -97,13 +97,13 @@ function update() {
         name: taskInput.value
     }
     allTasks.splice(currIndex, 1, task)
-    localStorage.setItem('task' , JSON.stringify(allTasks))
+    localStorage.setItem('task', JSON.stringify(allTasks))
     addBtn.classList.remove('d-none')
     updateBtn.classList.add('d-none')
     display()
     clearInput()
 }
 
-updateBtn.addEventListener('click' , function() {
+updateBtn.addEventListener('click', function () {
     update()
 })
